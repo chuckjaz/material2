@@ -90,7 +90,11 @@ describe('MatMenu', () => {
     }).not.toThrowError();
   });
 
+<<<<<<< HEAD
   it('should close the menu when a click occurs outside the menu', fakeAsync(() => {
+=======
+  it('should close the menu when a click occurs outside', fakeAsync(() => {
+>>>>>>> wip: angular 5 support
     const fixture = TestBed.createComponent(SimpleMenu);
     fixture.detectChanges();
     fixture.componentInstance.trigger.openMenu();
