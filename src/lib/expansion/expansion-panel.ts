@@ -42,9 +42,6 @@ export const _MatExpansionPanelMixinBase = mixinDisabled(MatExpansionPanelBase);
 /** MatExpansionPanel's states. */
 export type MatExpansionPanelState = 'expanded' | 'collapsed';
 
-/** Time and timing curve for expansion panel animations. */
-export const EXPANSION_PANEL_ANIMATION_TIMING = '225ms cubic-bezier(0.4,0.0,0.2,1)';
-
 /**
  * <mat-expansion-panel> component.
  *
@@ -75,7 +72,7 @@ export const EXPANSION_PANEL_ANIMATION_TIMING = '225ms cubic-bezier(0.4,0.0,0.2,
     trigger('bodyExpansion', [
       state('collapsed', style({height: '0px', visibility: 'hidden'})),
       state('expanded', style({height: '*', visibility: 'visible'})),
-      transition('expanded <=> collapsed', animate(EXPANSION_PANEL_ANIMATION_TIMING)),
+      transition('expanded <=> collapsed', animate('225ms cubic-bezier(0.4,0.0,0.2,1)')),
     ]),
   ],
 })

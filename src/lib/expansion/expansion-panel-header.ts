@@ -24,7 +24,7 @@ import {
 } from '@angular/core';
 import {merge} from 'rxjs/observable/merge';
 import {Subscription} from 'rxjs/Subscription';
-import {EXPANSION_PANEL_ANIMATION_TIMING, MatExpansionPanel} from './expansion-panel';
+import {MatExpansionPanel} from './expansion-panel';
 
 
 /**
@@ -64,7 +64,7 @@ import {EXPANSION_PANEL_ANIMATION_TIMING, MatExpansionPanel} from './expansion-p
     trigger('indicatorRotate', [
       state('collapsed', style({transform: 'rotate(0deg)'})),
       state('expanded', style({transform: 'rotate(180deg)'})),
-      transition('expanded <=> collapsed', animate(EXPANSION_PANEL_ANIMATION_TIMING)),
+      transition('expanded <=> collapsed', animate('225ms cubic-bezier(0.4,0.0,0.2,1)')),
     ]),
     trigger('expansionHeight', [
       state('collapsed', style({
@@ -77,7 +77,7 @@ import {EXPANSION_PANEL_ANIMATION_TIMING, MatExpansionPanel} from './expansion-p
       }), {
         params: {expandedHeight: '64px'}
       }),
-      transition('expanded <=> collapsed', animate(EXPANSION_PANEL_ANIMATION_TIMING)),
+      transition('expanded <=> collapsed', animate('225ms cubic-bezier(0.4,0.0,0.2,1)')),
     ]),
   ],
 })

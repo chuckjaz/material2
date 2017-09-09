@@ -6,7 +6,9 @@ import {renderModuleFactory} from '@angular/platform-server';
 import {join} from 'path';
 import {readFileSync} from 'fs-extra';
 import {log} from 'gulp-util';
-import {KitchenSinkServerModuleNgFactory} from './kitchen-sink/kitchen-sink.ngfactory';
+import {
+  KitchenSinkServerModuleNgFactory
+} from './dist/packages/universal-app/kitchen-sink/kitchen-sink.ngfactory';
 
 enableProdMode();
 

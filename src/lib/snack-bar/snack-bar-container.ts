@@ -38,6 +38,8 @@ import {Subject} from 'rxjs/Subject';
 import {MatSnackBarConfig} from './snack-bar-config';
 
 
+export type SnackBarState = 'visible' | 'hidden' | 'void';
+
 // TODO(jelbourn): we can't use constants from animation.ts here because you can't use
 // a text interpolation in anything that is analyzed statically with ngc (for AoT compile).
 export const SHOW_ANIMATION = '225ms cubic-bezier(0.4,0.0,1,1)';
