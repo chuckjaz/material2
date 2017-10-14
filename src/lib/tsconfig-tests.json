@@ -10,7 +10,7 @@
     "types": ["jasmine"],
     "paths": {
       "@angular/material/*": ["./*"],
-      "@angular/cdk/*": ["../../dist/packages/cdk/*/public-api"]
+      "@angular/cdk/*": ["../../dist/packages/cdk/*"]
     }
   },
   "include": [
