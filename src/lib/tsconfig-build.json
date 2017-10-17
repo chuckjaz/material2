@@ -12,6 +12,10 @@
     "moduleResolution": "node",
     "outDir": "../../dist/packages/material",
     "rootDir": ".",
+    "rootDirs": [
+      ".",
+      "../../dist/packages/material"
+    ],
     "sourceMap": true,
     "inlineSources": true,
     "target": "es2015",

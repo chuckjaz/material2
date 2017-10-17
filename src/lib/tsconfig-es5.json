@@ -13,6 +13,10 @@
     "moduleResolution": "node",
     "outDir": "../../dist/packages/material/esm5",
     "rootDir": ".",
+    "rootDirs": [
+      ".",
+      "../../dist/packages/material"
+    ],
     "sourceMap": true,
     "inlineSources": true,
     "target": "es5",
